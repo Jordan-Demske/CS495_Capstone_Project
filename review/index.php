@@ -32,33 +32,37 @@
       exit();
     }
 
-    $sql = "SELECT * FROM reviews";
+    if(isset($_GET["reviewID"])){
+      $review = $_GET["reviewID"];
+      $sql = "SELECT * FROM reviews WHERE id = '$review'";
 
-    $result = $mysqli->query($sql);
-      
-    if ($result->num_rows > 0) {
-      while($row = $result->fetch_assoc()) {
-        $id = $row["id"];
-        $name = $row["name"];
-        $indication = $row["score_indication"];
-        $efficacy = $row["score_efficacy"];
-        $place = $row["score_place"];
-        $dosing = $row["score_dosing"];
-        $other_agents = $row["score_other_agents"];
-        $serious_adrs = $row["score_serious_adrs"];
-        $common_adrs = $row["score_common_adrs"];
-        $monitoring = $row["score_monitoring"];
-        $interactions = $row["score_interactions"];
-        $cost = $row["score_cost"];
-        $contraindication = $row["score_contraindication"];
-        $specific_populations = $row["score_specific_populations"];
-        $rating = $row["score_rating"];
-        $did_right = $row["did_right"];
-        $could_improve = $row["could_improve"];   
+      $result = $mysqli->query($sql);
+        
+      if ($result->num_rows > 0) {
+        while($row = $result->fetch_assoc()) {
+          $id = $row["id"];
+          $name = $row["name"];
+          $indication = $row["score_indication"];
+          $efficacy = $row["score_efficacy"];
+          $place = $row["score_place"];
+          $dosing = $row["score_dosing"];
+          $other_agents = $row["score_other_agents"];
+          $serious_adrs = $row["score_serious_adrs"];
+          $common_adrs = $row["score_common_adrs"];
+          $monitoring = $row["score_monitoring"];
+          $interactions = $row["score_interactions"];
+          $cost = $row["score_cost"];
+          $contraindication = $row["score_contraindication"];
+          $specific_populations = $row["score_specific_populations"];
+          $rating = $row["score_rating"];
+          $did_right = $row["did_right"];
+          $could_improve = $row["could_improve"];   
+        }
+      } else {
+        printf('No record found.<br />');
       }
-    } else {
-      printf('No record found.<br />');
     }
+
     mysqli_free_result($result);
     $mysqli->close();
   ?>
