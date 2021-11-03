@@ -5,15 +5,15 @@
     padding: 2% 0;
 }
 #sidebar-left-container{
-    flex-basis:20%;
+    flex-basis:10%;
     background-color:white;
 }
 #sidebar-right-container{
-    flex-basis:20%;
+    flex-basis:10%;
     background-color:white;
 }
 #main-container{
-    flex-basis:50%;
+    flex-basis:70%;
 }
 #name{
     font-size: 40px;

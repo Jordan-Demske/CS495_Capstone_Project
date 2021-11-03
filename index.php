@@ -22,8 +22,10 @@
     <?php include $_SERVER["DOCUMENT_ROOT"]."/Capstone/components/nav.php";?>
     
     <div id="search-area">
-        <input id="search-bar" type="text" name="search"/>
-        <button id="search-btn">Search</button>
+        <input id="search-bar" type="text" name="search" placeholder="Search reviews..."/>
+        <button id="search-btn">
+            <span id="search_text">Search</span>
+        </button>
     </div>
 
     <div id="page-container">
