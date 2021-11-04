@@ -77,37 +77,59 @@
         <table id="results-table">
           <tr>
             <td>Indication</td>
-            <td>Efficacy</td>
-            <td>Place</td>
-            <td>Dosing</td>
-            <td>Other Agents</td>
-            <td>Serious ADRs</td>
-            <td>Common ADRs</td>
-            <td>Monitoring</td>
-            <td>Interactions</td>
-            <td>Cost</td>
-            <td>Contraindication</td>
-            <td>Specific Populations</td>
-            <td>Rating</td>
+            <td><img src="../assets/icons/<?php echo $indication ?>.png"/></td>
           </tr>
           <tr>
-            <td><img src="../assets/icons/<?php echo $indication ?>.png"/></td>
+            <td>Efficacy</td>
             <td><img src="../assets/icons/<?php echo $efficacy ?>.png"/></td>
+          </tr>
+          <tr>
+            <td>Place</td>
             <td><img src="../assets/icons/<?php echo $place ?>.png"/></td>
+          </tr>
+          <tr>
+            <td>Dosing</td>
             <td><img src="../assets/icons/<?php echo $dosing ?>.png"/></td>
+          </tr>
+          <tr>
+            <td>Other Agents</td>
             <td><img src="../assets/icons/<?php echo $other_agents ?>.png"/></td>
+          </tr>
+          <tr>
+            <td>Serious ADRs</td>
             <td><img src="../assets/icons/<?php echo $serious_adrs ?>.png"/></td>
+          </tr>
+          <tr>
+            <td>Common ADRs</td>
             <td><img src="../assets/icons/<?php echo $common_adrs ?>.png"/></td>
+          </tr>
+          <tr>
+            <td>Monitoring</td>
             <td><img src="../assets/icons/<?php echo $monitoring ?>.png"/></td>
+          </tr>
+          <tr>
+            <td>Interactions</td>
             <td><img src="../assets/icons/<?php echo $interactions ?>.png"/></td>
+          </tr>
+          <tr>
+            <td>Cost</td>
             <td><img src="../assets/icons/<?php echo $cost ?>.png"/></td>
+          </tr>
+          <tr>
+            <td>Contraindication</td>
             <td><img src="../assets/icons/<?php echo $contraindication ?>.png"/></td>
+          </tr>
+          <tr>
+            <td>Specific Populations</td>
             <td><img src="../assets/icons/<?php echo $specific_populations ?>.png"/></td>
+          </tr>
+          <tr style="font-weight:bold">
+            <td>Rating</td>
             <td><?php echo $rating ?>%</td>
           </tr>
-        </table>
+        </table><br/>
 
-        <p id="did_right"><?php echo $did_right ?></p>
+        <p id="did_right"><?php echo $did_right ?></p><br><br>
         <p id="could_improve"><?php echo $could_improve ?></p>
       </div>
     </div>

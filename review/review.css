@@ -5,15 +5,15 @@
     padding: 2% 0;
 }
 #sidebar-left-container{
-    flex-basis:10%;
+    flex-basis:15%;
     background-color:white;
 }
 #sidebar-right-container{
-    flex-basis:10%;
+    flex-basis:15%;
     background-color:white;
 }
 #main-container{
-    flex-basis:70%;
+    flex-basis:60%;
 }
 #name{
     font-size: 40px;
@@ -23,7 +23,14 @@
     border-bottom: 2px solid #1a1a1a;
     padding:5px 0;
 }
+#info{
+    background-color:white;
+    padding:1%;
+}
 
+#results-table td{
+    padding:10px;
+}
 #results-table img{
     width:20px;
     height:20px;
