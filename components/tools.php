@@ -1,4 +1,5 @@
 <?php
+    session_start();
     function get_mysql_connection(){
         $host = "localhost";
         $username = "root";

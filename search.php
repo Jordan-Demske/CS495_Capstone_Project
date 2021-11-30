@@ -6,17 +6,25 @@
     if($mysqli == false){
         print("Failed to connect to database.");
         exit();
-        }
-    $result = $mysqli->query("SELECT id,name,score_rating FROM reviews");
+    }
+
+    $term = $_POST['data'];
+
+    if($term == null){
+        $result = $mysqli->query("SELECT id,ad_name,drug_name,score_rating FROM reviews");
+    }else{
+        $term = "%".$term."%";
+        $result = $mysqli->query("SELECT id,ad_name,drug_name,score_rating FROM reviews WHERE drug_name LIKE '$term' OR ad_name LIKE '$term'");
+    }
 
     if ($result->num_rows > 0) {
-    while($row = $result->fetch_assoc()){
-        $dbdata[]=$row;
-    }
+        while($row = $result->fetch_assoc()){
+            $dbdata[]=$row;
+        }
+        echo json_encode($dbdata);
     }else{
-        printf('No record found.<br />');
+        echo json_encode(null);
     }
-    echo json_encode($dbdata);
     mysqli_free_result($result);
     $mysqli->close();
 ?>

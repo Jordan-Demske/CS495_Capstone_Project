@@ -41,7 +41,8 @@
       if ($result->num_rows > 0) {
         while($row = $result->fetch_assoc()) {
           $id = $row["id"];
-          $name = $row["name"];
+          $ad_name = $row["ad_name"];
+          $drug_name = $row["drug_name"];
           $indication = $row["score_indication"];
           $efficacy = $row["score_efficacy"];
           $place = $row["score_place"];
@@ -72,7 +73,7 @@
       <h1>Sidebar Left</h1>
     </div>
     <div id="main-container">
-      <h1 id="name"><?php echo $name ?> Review</h1>
+      <h1 id="name"><?php echo $ad_name . ' (' . $drug_name . ')' ?> Review</h1>
       <div id="info">
         <table id="results-table">
           <tr>

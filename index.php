@@ -19,7 +19,22 @@
 
 <body>
 
-    <?php include $_SERVER["DOCUMENT_ROOT"]."/Capstone/components/nav.php";?>
+    <?php
+        include $_SERVER["DOCUMENT_ROOT"]."/Capstone/components/tools.php";
+        include $_SERVER["DOCUMENT_ROOT"]."/Capstone/components/nav.php";  
+    ?>
+
+    <div id="fullscreen">
+        <div id="overlay"></div>
+        <div id="message">
+            <h1>The Problem with Drug Ads.</h1>
+            <p>Drug advertisements are incomplete and do not give enough information on what a person needs to know in order to ask their doctor. At a minimum a drug company should give the percent of an adverse drug reaction, percent success in treating a disease, eliminate jargon and explain its place in therapy.</p>
+        </div>
+        <div id="scroll-button">
+            <p>Reviews</p>
+            <img src="assets/images/arrow.svg">
+        </div>
+    </div>
     
     <div id="search-area">
         <input id="search-bar" type="text" name="search" placeholder="Search reviews..."/>
@@ -33,7 +48,7 @@
             <h1>Sidebar Left</h1>
         </div>
 
-        <div id="main-container"></div>
+        <div id="main"><div id="main-container"></div></div>
 
         <div id="sidebar-right-container">
             <h1>Sidebar Right</h1>

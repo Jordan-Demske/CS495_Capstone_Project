@@ -19,6 +19,19 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
+@font-face {
+    font-family: Roboto-thin;
+    src: url('../assets/fonts/Roboto/Roboto-Thin.ttf');
+}
+@font-face {
+    font-family: Roboto-regular;
+    src: url('../assets/fonts/Roboto/Roboto-Light.ttf');
+}
+@font-face {
+    font-family: Bebas;
+    src: url('../assets/fonts/Bebas/BebasNeue-Regular.ttf');
+}
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
@@ -27,6 +40,8 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 	background-color:#f2f2f2;
+	font-family: 'Roboto-regular', sans-serif;
+	margin-top:70px;
 }
 ol, ul {
 	list-style: none;
@@ -46,17 +61,22 @@ table {
 
 /* -- NAV -- */
 nav{
-	background-color: #0099ff;
-	color:white;
+	position: fixed;
+	z-index:1;
+	top:0;
+	width:100vw;
+	height:90px;
+	background-color: white;
+	color:black;
 	display: flex;
 	justify-content: space-between;
-	font-family: 'Quicksand', sans-serif;
 }
 #logo{
-	font-size: 40px;
-	line-height: 80px;
-	font-weight: 700;
-	padding-left:30px;
+	margin-left:30px;
+}
+#logo img{
+	height:60px;
+	padding:15px;
 }
 #nav-links{
 	display:flex;
@@ -64,13 +84,16 @@ nav{
 	padding-right:30px;
 }
 #nav-links li a{
-	padding:20px;
+	display:block;
+	font-family: 'Bebas', sans-serif;
+	padding:0 20px;
 	text-decoration: none;
-	color:white;
+	color:black;
 	font-size:30px;
-	line-height:80px;
+	line-height:90px;
 	transition: background-color .5s;
+	cursor:pointer;
 }
 #nav-links li a:hover{
-	background-color:#006bb3;
+	background-color:gainsboro;
 }
