@@ -46,10 +46,11 @@ if(!$error){
             score_rating,
             did_right,
             could_improve,
-            ad_url
-        ) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)');
+            ad_url,
+            video_url
+        ) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)');
 
-    $stmt->bind_param("ssiiiiiiiiiiiiisss",
+    $stmt->bind_param("ssiiiiiiiiiiiiissss",
         $data["ad_name"],
         $data["drug_name"],
         $data["indication"],
@@ -67,7 +68,8 @@ if(!$error){
         $data["rating"],
         $data["did_right"],
         $data["could_improve"],
-        $data["ad_url"]
+        $data["ad_url"],
+        $data["video_url"]
     );
 
     if($stmt->execute()){

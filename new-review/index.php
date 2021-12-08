@@ -113,6 +113,9 @@
           <label>Ad URL (iSpot URL)</label>
           <input type="text" id="ad-url"/>
 
+          <label>Video URL (iSpot Share Link)</label>
+          <input type="text" id="video-url"/>
+
           <button id="submit">Add Review</button>
           <p id="error-message"></p>
       </div>

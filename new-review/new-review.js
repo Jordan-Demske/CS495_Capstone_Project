@@ -18,6 +18,7 @@ $(document).ready(function(){
         var did_right = $("#did-right").val(); 
         var could_improve = $("#could-improve").val();
         var ad_url = $("#ad-url").val();
+        var video_url = $("#video-url").val();
 
         var data = {
             "ad_name" : ad_name,
@@ -37,7 +38,9 @@ $(document).ready(function(){
             "rating" : rating,
             "did_right" : did_right,
             "could_improve" : could_improve,
-            "ad_url" : ad_url};
+            "ad_url" : ad_url,
+            "video_url" : video_url.replace("/a/", "/share/")
+        };
         var check = check_data(data);
         if(check == 0){
             submit(data);
