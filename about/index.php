@@ -15,7 +15,10 @@
 </head>
 
 <body>
-  <?php include $_SERVER["DOCUMENT_ROOT"]."/Capstone/components/nav.php"; ?>
+  <?php
+    include $_SERVER["DOCUMENT_ROOT"]."/Capstone/components/tools.php";
+    include $_SERVER["DOCUMENT_ROOT"]."/Capstone/components/nav.php";
+  ?>
   <h1>About Page</h1>
 </body>
 </html>

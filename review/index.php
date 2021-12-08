@@ -18,8 +18,8 @@
 
 <body>
   <?php
-    include $_SERVER["DOCUMENT_ROOT"]."/Capstone/components/nav.php";
     include $_SERVER["DOCUMENT_ROOT"]."/Capstone/components/tools.php";
+    include $_SERVER["DOCUMENT_ROOT"]."/Capstone/components/nav.php";
 
     $id;$name;$indication;$efficacy;$place;$dosing;$other_agents;$serious_adrs;
     $common_adrs;$monitoring;$interactions;$cost;$contraindication;

@@ -7,6 +7,7 @@
         <li><a href="<?php echo $root;?>/about">About</a></li>
         <?php
             if(isset($_SESSION["username"])){
+                echo "<li><a href='".$root."/new-review'>Add Review</a></li>";
                 echo "<li><a href='".$root."/login'>Log Out</a></li>";
             }else{
                 echo "<li><a href='".$root."/login'>Log In</a></li>";
