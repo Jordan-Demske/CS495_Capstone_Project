@@ -36,8 +36,8 @@
     height:20px;
 }
 
-#edit-btn{
-    margin-top:20px;
+#edit-btn, #delete-btn{
+    margin:20px;
     border:none;
     background-color:#4cb6fd;
     color:white;
@@ -45,6 +45,6 @@
     border-radius:5px;
     cursor:pointer;
 }
-#edit-btn:hover{
+#edit-btn:hover, #delete-btn:hover{
     background-color:#006bb3;
 }

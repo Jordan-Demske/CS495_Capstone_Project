@@ -13,6 +13,7 @@
     <meta property="og:image" content="image.png">
 
     <link rel="stylesheet" href="review.css">
+    <script src="review.js"></script>
 
 </head>
 
@@ -73,6 +74,7 @@
       <h1>Sidebar Left</h1>
     </div>
     <div id="main-container">
+      <input type="text" id="id" value="<?php echo $id ?>" style="display:none"/>
       <h1 id="name"><?php echo $ad_name . ' (' . $drug_name . ')' ?> Review</h1>
       <div id="info">
         <table id="results-table">
@@ -137,6 +139,7 @@
 
           if(isset($_SESSION["username"])){
             echo "<a href='".$root."/edit-review?reviewID=".$id."'><button id='edit-btn'>Edit Review</button></a>";
+            echo "<button id='delete-btn'>Delete Review</button>";
           }
 
         ?>
