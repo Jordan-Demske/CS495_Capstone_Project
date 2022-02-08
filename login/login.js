@@ -24,10 +24,10 @@ function login(username, password){
         });
            
         request.done(function(results) {
-            if(results == "true"){
+            if(results == true){
                 window.location.href = '../new-review';
             }else{
-
+                alert("An error occured while logging in.")
             }
         });
            

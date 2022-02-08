@@ -6,6 +6,7 @@
         $password = "";
         $dbname = "database";
 
+<<<<<<< HEAD
         if($isTest) {
             $dbname = "test_database";
         }
@@ -14,6 +15,8 @@
         $name;
         $rating;
 
+=======
+>>>>>>> cccb1f1c6f036059776fc237d3b1985558532c33
         $mysqli = new mysqli($host, $username, $password, $dbname);
 
         if($mysqli->connect_errno ) {
@@ -25,6 +28,7 @@
         }
     }
 
+<<<<<<< HEAD
     class SQL_Connection{
         private $host = "localhost";
         private $username = "root";
@@ -48,4 +52,9 @@
             }
         }
     }
+=======
+    get_mysql_connection();
+
+
+>>>>>>> cccb1f1c6f036059776fc237d3b1985558532c33
 ?>
