@@ -1,1 +1,1 @@
-{"version":1,"defects":{"ExampleTest::testTheTesting":4,"ExampleTest::testMySQLConnection":4,"ExampleTest::testGetReview":3},"times":{"ExampleTest::testThatStringsMatch":0.007,"ExampleTest::testTheTesting":0.007,"ExampleTest::testMySQLConnection":0.022,"ExampleTest::testGetReview":0.015}}
+{"version":1,"defects":{"ExampleTest::testTheTesting":4,"ExampleTest::testMySQLConnection":4,"ExampleTest::testGetReview":3},"times":{"ExampleTest::testThatStringsMatch":0.007,"ExampleTest::testTheTesting":0.005,"ExampleTest::testMySQLConnection":0.002,"ExampleTest::testGetReview":0.023}}
