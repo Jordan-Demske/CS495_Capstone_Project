@@ -35,3 +35,16 @@
     width:20px;
     height:20px;
 }
+
+#edit-btn{
+    margin-top:20px;
+    border:none;
+    background-color:#4cb6fd;
+    color:white;
+    padding:15px 20px;
+    border-radius:5px;
+    cursor:pointer;
+}
+#edit-btn:hover{
+    background-color:#006bb3;
+}
