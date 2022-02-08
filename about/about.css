@@ -1,0 +1,52 @@
+#page-container{
+    max-width:1000px;
+    display:flex;
+    justify-content: space-evenly;
+    padding: 0;
+    margin: 0 auto;
+    margin-top: 120px;
+}
+#main-container{
+    flex-basis:64%;
+    padding:3%;
+    background-color: white;
+}
+#sidebar{
+    flex-basis:24%;
+    padding:3%;
+    background-color: gainsboro;
+}
+
+/* Main Content */
+
+#title{
+    font-size: 40px;
+    font-weight: bolder;
+    border-bottom: 3px solid black;
+}
+
+/* Sidebar */
+
+#headshot{
+    width:100%;
+}
+.info{
+    font-size: 20px;
+    padding-top: 20px;
+    line-height: 2rem;
+}
+#links-header{
+    font-size: 25px;
+    margin-top:20px;
+    font-weight: bolder;
+    border-bottom: 2px solid grey;
+}
+#links li{
+    font-size: 18px;
+    padding-top:10px;
+}
+#links li a{
+    text-decoration: none;
+    color: #006bb3;
+    font-weight: bold;
+}

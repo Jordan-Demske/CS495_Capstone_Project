@@ -2,7 +2,7 @@
 
 <html lang="en">
 <head>
-    <title>Login - Building Better Drug Ads</title>
+    <title>Review - Building Better Drug Ads</title>
 
     <?php include "../components/header.php"; ?>
 
