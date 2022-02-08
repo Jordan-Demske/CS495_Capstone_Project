@@ -132,6 +132,14 @@
 
         <p id="did_right"><?php echo $did_right ?></p><br><br>
         <p id="could_improve"><?php echo $could_improve ?></p>
+
+        <?php
+
+          if(isset($_SESSION["username"])){
+            echo "<a href='".$root."/edit-review?reviewID=".$id."'><button id='edit-btn'>Edit Review</button></a>";
+          }
+
+        ?>
       </div>
     </div>
     <div id="sidebar-right-container">
