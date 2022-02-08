@@ -28,8 +28,13 @@ This is the repository for the CS495_Capstone_Project for Jordan Demske, Jesse C
 ### New Review
 - Contains a webpage for creating a drug advertisement review. It contains radio inputs for assessing the 12 criteria points. It also includes text boxes for a rating percent, “did right” description, “could improve” description, and video URLs. When an advertisement is submitted, new-review.js collects the form data and uses AJAX to pass it to new-review.php. New-review.php checks that no fields are empty. If any fields are empty or the database insertion fails, it returns the error, if everything is successful, it returns ‘0’
 
+### Edit Review
+- Contains a webpage for editing a drug advertisement review. It contains the same inputs as the new-review page. edit-review.js collects the form data and uses AJAX to pass it to edit-review.php. Edit-review.php checks that the user is logged in and then updates the review, if everything is successful, it returns ‘0’
+
 ### Review
 - Contains a webpage for a drug advertisement review. It loads a selected review from the database and displays the review’s criteria, rating, “did right” description, and “could improve” description. It uses $_GET["reviewID"] to retrieve review id from the URL
+
+- also contains delete.php, a script for checking if an admin is logged in, and then deleting a review from the database.
 
 ### Components
 - Contains header.php, nav.php, and tools.php. These are to be included for use in other files.
