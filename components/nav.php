@@ -13,4 +13,8 @@
                 echo "<li><a href='".$root."/login'>Log In</a></li>";
             }
         ?>
+    </ul>
+    <div id="mobileNav">
+        <img src="/Capstone/assets/icons/menu-icon.svg"/>
+    </div>
 </nav>

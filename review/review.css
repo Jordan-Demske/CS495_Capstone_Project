@@ -1,39 +1,82 @@
 #page-container{
     width:100%;
-    display:flex;
-    justify-content: space-evenly;
-    padding: 2% 0;
-}
-#sidebar-left-container{
-    flex-basis:15%;
-    background-color:white;
-}
-#sidebar-right-container{
-    flex-basis:15%;
-    background-color:white;
+    margin-top:90px;
+    background-color: white;
 }
 #main-container{
-    flex-basis:60%;
+    max-width:1024px;
+    margin:0 auto;
+    padding:40px;
+    box-sizing: border-box;
 }
 #name{
     font-size: 40px;
     font-family:'Quicksand';
     width:100%;
     color:#1a1a1a;
-    border-bottom: 2px solid #1a1a1a;
     padding:5px 0;
 }
 #info{
-    background-color:white;
     padding:1%;
 }
 
-#results-table td{
-    padding:10px;
+#results{
+    display:flex;
+    flex-wrap: wrap;
+    padding:20px 0;
+    justify-content: center;
 }
-#results-table img{
+.result-cell{
+    width:200px;
+    background-color: rgb(233, 233, 233);
+    border-radius: 5px;
+    padding:5px;
+    margin:5px;
+    display:flex;
+    flex-direction: row-reverse;
+    justify-content: left;
+    align-items: center;
+}
+.result-cell p{
+}
+.result-cell img{
     width:20px;
     height:20px;
+    margin-right:10px;
+}
+#rating{
+    font-size: 25px;
+    line-height: 2;
+    border-top: 1px solid gainsboro;
+    border-bottom: 1px solid gainsboro;
+    margin:20px 0;
+}
+
+#did-right-container{
+    padding:20px 0;
+    margin:20px 0;
+    border-bottom:1px solid gainsboro;
+}
+
+#could-improve-container{
+    padding:20px 0;
+    margin:20px 0;
+}
+
+#could-improve-container h3, #did-right-container h3{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom:10px;
+}
+
+#did-right{
+    line-height: 1.7;
+    text-indent: 30px;
+}
+
+#could-improve{
+    line-height: 1.7;
+    text-indent: 30px;
 }
 
 #edit-btn, #delete-btn{
@@ -47,4 +90,25 @@
 }
 #edit-btn:hover, #delete-btn:hover{
     background-color:#006bb3;
+}
+
+/* -- MEDIA QUERIES -- */
+@media only screen and (max-width : 768px) {
+    #sidebar-right{
+        display:none;
+    }
+    #sidebar-left {
+        max-width: 400px;
+        width: 100%;
+        height:auto;
+        margin:10px auto;
+        padding:20px;
+        box-sizing: border-box;
+        background-color: transparent;
+        max-height: 400px;
+        float: none;
+        left:0;
+        top:0;
+        position: relative;
+    }
 }

@@ -45,23 +45,22 @@ function showResults(results){
     }else{
         $.each(results,function(i, item){
             $("#main-container").append(
-                "<a href='/Capstone/review?reviewID="+item["id"]+"'>\
-                    <div class='result'>\
-                        <div class='result-left'>\
-                            <div>\
-                                <h2 class='drug-name'>"+item['drug_name']+"</h2>\
-                                <h1 class='ad-name'>"+item['ad_name']+"</h1>\
-                            </div>\
-                            <div class='rating'>\
-                                <p class='percent'>"+item["score_rating"]+"%</p>\
-                                <div class='bar-container'>\
-                                    <div style='width:"+item["score_rating"]+"%'></div>\
-                                </div>\
+                "<div class='result'>\
+                    <iframe  class='result-video' scrolling='no' src='"+item['video_url']+"' allowfullscreen=''></iframe>\
+                    <div class='result-info'>\
+                        <div>\
+                            <h2 class='drug-name'>"+item['drug_name']+"</h2>\
+                            <h1 class='ad-name'>"+item['ad_name']+"</h1>\
+                        </div>\
+                        <div class='rating'>\
+                            <p class='percent'><u>Rating</u>: "+item["score_rating"]+"%</p>\
+                            <div class='bar-container'>\
+                                <div style='width:"+item["score_rating"]+"%'></div>\
                             </div>\
                         </div>\
-                        <iframe  class='result-right' scrolling='no' src='"+item['video_url']+"' allowfullscreen=''></iframe>\
+                        <a href='/Capstone/review?reviewID="+item["id"]+"'><button class='viewBtn'>Full Review</button></a>\
                     </div>\
-                </a>"
+                </div>"
             );
         });
     }

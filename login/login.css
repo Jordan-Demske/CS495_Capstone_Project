@@ -1,21 +1,25 @@
 #page-container{
-    max-width:600px;
+    width:100%;
+    min-height: calc(100vh - 90px);
     background-color:white;
-    border-radius:10px;
-    margin:100px auto;
+    margin-top:90px;
+    display:flex;
+    justify-content: center;
 }
 #form-container{
+    max-width: 600px;
     padding:50px;
     text-align:center;
 }
 #form-container h1{
-    font-size: 2vw;
+    font-size: 40px;
     font-family: 'bebas';
     padding-bottom:20px;
 }
 #form-container input{
     border:none;
     width:100%;
+    box-sizing: border-box;
     background-color:gainsboro;
     border-radius: 5px;
     padding:10px 15px;

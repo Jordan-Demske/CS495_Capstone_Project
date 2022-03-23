@@ -44,15 +44,15 @@
     </div>
 
     <div id="page-container">
-        <div id="sidebar-left-container">
-            <h1>Sidebar Left</h1>
+        <div id="sidebar-left">
+            <h1>Ads</h1>
+        </div>
+
+        <div id="sidebar-right">
+            <h1>Sidebar Right</h1>
         </div>
 
         <div id="main"><div id="main-container"></div></div>
-
-        <div id="sidebar-right-container">
-            <h1>Sidebar Right</h1>
-        </div>
     </div>
 </body>
 </html>

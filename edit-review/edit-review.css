@@ -1,14 +1,17 @@
 #page-container{
-    max-width:600px;
+    width:100%;
+    min-height: calc(100vh - 90px);
     background-color:white;
-    border-radius:10px;
-    margin:100px auto;
+    margin-top:90px;
+    display:flex;
+    justify-content: center;
 }
 #form-container{
     padding:50px;
+    max-width: 700px;
 }
 #form-container h1{
-    font-size: 2vw;
+    font-size: 40px;
     font-family: 'bebas';
     padding-bottom:20px;
 }
@@ -31,7 +34,7 @@
 }
 #form-container button{
     border:none;
-    background-color:#80ccff;
+    background-color:#4cb6fd;
     color:white;
     padding:15px 20px;
     border-radius:5px;

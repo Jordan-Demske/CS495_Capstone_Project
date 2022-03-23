@@ -21,16 +21,17 @@
     top: 50%;
 }
 #message h1{
-    font-size:5vw;
-    line-height:8vw;
+    font-size:80px;
+    line-height:1.2;
+    padding-bottom:20px;
     color:white;
     font-family: 'Roboto-thin';
 }
 #message p{
-    font-size:1.2vw;
+    font-size:25px;
     color:white;
     font-family: 'Roboto-regular';
-    line-height:40px;
+    line-height:1.7;
     max-width:800px;
     margin:0 auto;
 }
@@ -74,7 +75,8 @@
     justify-content: center;
 }
 #search-bar{
-    width:15%;
+    max-width:500px;
+    width:100%;
     margin:10px;
     padding:5px;
     border:none;
@@ -95,82 +97,138 @@
 
 #page-container{
     width:100%;
-    display:flex;
-    justify-content: space-evenly;
-    padding: 2% 0;
     min-height: 80vh;
 }
-#sidebar-left-container{
-    flex-basis:15%;
+#sidebar-left{
+    width:200px;
+    max-height: calc(100vh - 110px);
+    float:left;
+    margin-top:10px;
+    position:sticky;
+    left:10px;
+    top:100px;
     background-color:white;
     border: 2px solid #C3CFD9;
 }
-#sidebar-right-container{
-    flex-basis:15%;
+#sidebar-right{
+    width:200px;
+    max-height: calc(100vh - 110px);
+    margin-top:10px;
+    position:sticky;
+    float:right;
+    right:10px;
+    top:100px;
     background-color:white;
     border: 2px solid #C3CFD9;
 }
 #main{
-    flex-basis:60%;
-    background-color:white;
+    max-width:1024px;
+    margin:0 auto;
 }
 #main a{
     text-decoration: none;
     display:block;
 }
 #main-container{
-    padding:2%;
+    padding:30px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .result{
-    width:94%;
-    padding:3%;
+    max-width:400px;
+    width:100%;
     color:#404040;
-    display:flex;
+    background-color: white;
+    margin-bottom:30px;
+    overflow:hidden;
+    border-radius:20px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
 }
-.result-left{
-    flex-basis:60%;
+.result-video{
+    height:280px;
+    width:100%;
 }
-.result-right{
-    flex-basis:40%;
-    height: 220px;
-}
-.result:hover{
-    background-color: #f2f2f2;
-}
-#main-container a:not(:last-child){
-    border-bottom: 1px solid #bfbfbf;
+.result-info{
+    width:100%;
+    box-sizing: border-box;
+    padding:30px;
 }
 .drug-name{
     font-size:20px;
     color: #006bb3;
 }
 .ad-name{
-    font-size:40px;
+    font-size:32px;
     font-weight: 900;
     padding:10px 0;
     color:black;
 }
 .rating{
-    text-align: center;
-    width:92%;
-    padding:2%;
-    margin-right:4%;
-    background-color:gainsboro;
+    width:100%;
+    border-top:1px solid gainsboro;
+    padding:10px 0;
 }
 .percent{
-    font-size: 20px;
+    font-size: 16px;
     font-weight:700;
-    line-height:40px;
+    padding-bottom:10px;
+}
+.viewBtn{
+    background-color: gainsboro;
+    color:black;
+    border:none;
+    padding:10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.viewBtn:hover{
+    background-color: #00538a;
+    color:white;
 }
 .bar-container{
     width:100%;
     border-radius: 5px;
-    height:30px;
+    height:20px;
     overflow:hidden;
     background-color:#bfbfbf;
 }
 .bar-container div{
+    border-radius:5px;
     background-color: #006bb3;
     height:100%;
+}
+
+
+/* -- MEDIA QUERIES -- */
+@media only screen and (max-width : 768px) {
+	#message h1{
+        font-size:50px;
+        line-height:1.2;
+    }
+    #message p{
+        font-size:18px;
+    }
+    #scroll-button p{
+        display:none;
+    }
+
+    #sidebar-right{
+        display:none;
+    }
+    #sidebar-left {
+        max-width: 400px;
+        width: 100%;
+        height:auto;
+        margin:10px auto;
+        padding:20px;
+        box-sizing: border-box;
+        background-color: transparent;
+        max-height: 400px;
+        float: none;
+        left:0;
+        top:0;
+        position: relative;
+    }
 }

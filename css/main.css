@@ -62,7 +62,7 @@ table {
 /* -- NAV -- */
 nav{
 	position: fixed;
-	z-index:1;
+	z-index:101;
 	top:0;
 	width:100vw;
 	height:90px;
@@ -70,6 +70,7 @@ nav{
 	color:black;
 	display: flex;
 	justify-content: space-between;
+	border-bottom: 1px solid gainsboro;
 }
 #logo{
 	margin-left:30px;
@@ -96,4 +97,43 @@ nav{
 }
 #nav-links li a:hover{
 	background-color:gainsboro;
+}
+#mobileNav{
+	display:none;
+	width:90px;
+	height:90px;
+	padding-right:0px;
+	cursor:pointer;
+}
+#mobileNav img{
+	width:30px;
+	height:30px;
+	padding:30px;
+}
+
+/* -- MEDIA QUERIES -- */
+@media only screen and (max-width : 768px) {
+	#mobileNav{
+		display:block;
+	}
+	#logo{
+		margin-left:0px;
+	}
+    #nav-links{
+		display:none;
+		width:100%;
+		height:calc(100vh - 90px);
+		position:fixed;
+		top:90px;
+		bottom:0;
+		left:0;
+		right:0;
+		z-index: 100;
+		background-color: white;
+	}
+	#nav-links li{
+		width:100%;
+		text-align: center;
+		border-bottom:1px solid gainsboro;
+	}
 }
