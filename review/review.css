@@ -21,6 +21,10 @@
     padding:1%;
 }
 
+iframe{
+    width:100%;
+}
+
 #results{
     display:flex;
     flex-wrap: wrap;

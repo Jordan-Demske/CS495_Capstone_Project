@@ -28,3 +28,9 @@ $(document).ready(function(){
         }
     });
 });
+
+function resizeIframe(){
+    var width = $("#result-video").width();
+    console.log(width);
+    $("#result-video").height(width * 3/5);
+}

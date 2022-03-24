@@ -59,6 +59,7 @@
           $rating = $row["score_rating"];
           $did_right = $row["did_right"];
           $could_improve = $row["could_improve"];
+          $video_url = $row["video_url"];
         }
       } else {
         printf('No record found.<br />');
@@ -75,6 +76,7 @@
       <h1 id="name">"<?php echo $ad_name ?>" Review</h1>
       <h4 id="drug-name">Drug: <span style="text-decoration:underline"><?php echo $drug_name ?></span></h4>
       <div id="info">
+        <iframe id='result-video' scrolling='no' src='<?php echo $video_url ?>' onload="resizeIframe()"></iframe>
         <div id="results">
           <div class="result-cell">
             <p>Indication</p>
