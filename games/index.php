@@ -24,6 +24,7 @@
     <div id="page-container">
         <h1 id="page-title">Games</h1>
         <iframe src="../games_folder/game"></iframe>
+        <iframe src="../games_folder/game2"></iframe>
     </div>
 
 </body>

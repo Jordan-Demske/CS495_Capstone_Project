@@ -141,7 +141,7 @@ nav{
 }
 
 /* -- MEDIA QUERIES -- */
-@media only screen and (max-width : 768px) {
+@media only screen and (max-width : 880px) {
 	#mobileNav{
 		display:block;
 	}
