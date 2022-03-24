@@ -58,7 +58,7 @@
           $specific_populations = $row["score_specific_populations"];
           $rating = $row["score_rating"];
           $did_right = $row["did_right"];
-          $could_improve = $row["could_improve"];   
+          $could_improve = $row["could_improve"];
         }
       } else {
         printf('No record found.<br />');
@@ -140,12 +140,10 @@
         </div>
 
         <?php
-
           if(isset($_SESSION["username"])){
             echo "<a href='".$root."/edit-review?reviewID=".$id."'><button id='edit-btn'>Edit Review</button></a>";
             echo "<button id='delete-btn'>Delete Review</button>";
           }
-
         ?>
       </div>
     </div>

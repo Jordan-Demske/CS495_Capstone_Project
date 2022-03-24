@@ -58,11 +58,11 @@
     background-color: rgba(255,255,255,.1);
 }
 #scroll-button img{
-    max-width: 5vw;
+    max-width: 50px;
 }
 #scroll-button p{
     color:white;
-    font-size: 1vw;
+    font-size: 20px;
     font-weight: bolder;
     padding:20px 0;
 }
@@ -100,23 +100,12 @@
     min-height: 80vh;
 }
 #sidebar-left{
-    width:200px;
+    width:300px;
     max-height: calc(100vh - 110px);
     float:left;
     margin-top:10px;
     position:sticky;
     left:10px;
-    top:100px;
-    background-color:white;
-    border: 2px solid #C3CFD9;
-}
-#sidebar-right{
-    width:200px;
-    max-height: calc(100vh - 110px);
-    margin-top:10px;
-    position:sticky;
-    float:right;
-    right:10px;
     top:100px;
     background-color:white;
     border: 2px solid #C3CFD9;

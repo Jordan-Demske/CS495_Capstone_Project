@@ -45,11 +45,7 @@
 
     <div id="page-container">
         <div id="sidebar-left">
-            <h1>Ads</h1>
-        </div>
-
-        <div id="sidebar-right">
-            <h1>Sidebar Right</h1>
+            <?php include $_SERVER["DOCUMENT_ROOT"]."/Capstone/components/donations.php"; ?>
         </div>
 
         <div id="main"><div id="main-container"></div></div>

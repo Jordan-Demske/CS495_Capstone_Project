@@ -5,6 +5,7 @@
     <ul id="nav-links">
         <li><a href="<?php echo $root;?>/">Home</a></li>
         <li><a href="<?php echo $root;?>/about">About</a></li>
+        <li><a href="<?php echo $root;?>/games">Games</a></li>
         <?php
             if(isset($_SESSION["username"])){
                 echo "<li><a href='".$root."/new-review'>Add Review</a></li>";
