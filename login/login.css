@@ -1,0 +1,46 @@
+#page-container{
+    width:100%;
+    min-height: calc(100vh - 90px);
+    background-color:white;
+    margin-top:90px;
+    display:flex;
+    justify-content: center;
+}
+#form-container{
+    max-width: 600px;
+    padding:50px;
+    text-align:center;
+}
+#form-container h1{
+    font-size: 40px;
+    font-family: 'bebas';
+    padding-bottom:20px;
+}
+#form-container input{
+    border:none;
+    width:100%;
+    box-sizing: border-box;
+    background-color:gainsboro;
+    border-radius: 5px;
+    padding:10px 15px;
+    margin-bottom:20px;
+}
+#form-container button{
+    border:none;
+    background-color:#4cb6fd;
+    color:white;
+    padding:15px 20px;
+    border-radius:5px;
+    cursor:pointer;
+}
+#form-container button:hover{
+    background-color:#006bb3;
+}
+#error-message{
+    display:none;
+    width:96%;
+    background-color:#ff4d4d;
+    color:white;
+    padding:20px 2%;
+    margin-top:30px;
+}
