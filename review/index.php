@@ -42,7 +42,8 @@
         while($row = $result->fetch_assoc()) {
           $id = $row["id"];
           $ad_name = $row["ad_name"];
-          $drug_name = $row["drug_name"];
+          $trade_name = $row["trade_name"];
+          $generic_name = $row["generic_name"];
           $indication = $row["score_indication"];
           $efficacy = $row["score_efficacy"];
           $place = $row["score_place"];
@@ -60,6 +61,11 @@
           $could_improve = $row["could_improve"];
           $video_url = $row["video_url"];
         }
+        if($generic_name == "N/A"){
+          $generic_name = "";
+        }else{
+          $generic_name = " (".$generic_name.")";
+        }
       } else {
         printf('No record found.<br />');
       }
@@ -73,7 +79,7 @@
     <div id="main-container">
       <input type="text" id="id" value="<?php echo $id ?>" style="display:none"/>
       <h1 id="name">"<?php echo $ad_name ?>" Review</h1>
-      <h4 id="drug-name">Drug: <span style="text-decoration:underline"><?php echo $drug_name ?></span></h4>
+      <h4 id="drug-name">Drug: <span style="text-decoration:underline"><?php echo $trade_name.$generic_name ?></span></h4>
       <div id="info">
         <iframe id='result-video' scrolling='no' src='<?php echo $video_url ?>' onload="resizeIframe()"></iframe>
         <div id="results">
