@@ -41,8 +41,24 @@ iframe{
     flex-direction: row-reverse;
     justify-content: left;
     align-items: center;
+    position:relative;
+    cursor: pointer;
 }
-.result-cell p{
+.result-cell .tooltip{
+    background-color: #404040;
+    border-radius: 5px;
+    color:white;
+    position:absolute;
+    top:40px;
+    max-width: 200px;
+    padding:10px;
+    z-index: 10;
+    line-height: 1.2;
+    display:none;
+
+}
+.result-cell:hover .tooltip{
+    display:block;
 }
 .result-cell img{
     width:20px;
