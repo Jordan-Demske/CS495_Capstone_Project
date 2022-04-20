@@ -72,7 +72,7 @@ function submit(data){
         
     request.done(function(result) {
         if(result == "0"){
-            window.location.href = '/Capstone/review/?reviewID='+data["id"];
+            window.location.href = '/review/?reviewID='+data["id"];
         }else{
             alert("An error has occured. Please try again in a bit.");
         }

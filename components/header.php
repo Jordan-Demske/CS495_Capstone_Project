@@ -3,10 +3,10 @@
 <meta name="description" content="---">
 <meta name="author" content="Max, Jesse, Jordan">
 
-<link rel="stylesheet" href="/Capstone/css/main.css">
+<link rel="stylesheet" href="/css/main.css">
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 </style>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script src="/Capstone/scripts/main.js"></script>
+<script src="/scripts/main.js"></script>

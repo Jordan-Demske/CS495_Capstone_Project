@@ -25,7 +25,7 @@ function login(username, password){
            
         request.done(function(results) {
             if(results == true){
-                window.location.href = '../new-review';
+                window.location.href = '../';
             }else{
                 alert("An error occured while logging in.")
             }

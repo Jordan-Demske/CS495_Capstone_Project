@@ -1,6 +1,6 @@
 <?php
 
-    include $_SERVER['DOCUMENT_ROOT']."/Capstone/components/tools.php";
+    include "../components/tools.php";
 
     $data = $_POST['data'];
     $username = $data[0];

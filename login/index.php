@@ -6,11 +6,10 @@
 
     <?php include "../components/header.php"; ?>
 
-    <meta property="og:title" content="A Basic HTML5 Template">
+    <meta property="og:title" content="Building Better Drug Ads">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.sitepoint.com/a-basic-html5-template/">
-    <meta property="og:description" content="A simple HTML5 Template for new projects.">
-    <meta property="og:image" content="image.png">
+    <meta property="og:description" content="Drug ad reviews">
+    <meta property="og:image" content="/assets/images/logo.png">
 
     <link rel="stylesheet" href="login.css">
     <script src="login.js"></script>
@@ -18,11 +17,11 @@
 
 <body>
     <?php
-        include $_SERVER["DOCUMENT_ROOT"]."/Capstone/components/tools.php";
+        include "../components/tools.php";
         if(isset($_SESSION["username"])){
             $_SESSION["username"] = null;
         }
-        include $_SERVER["DOCUMENT_ROOT"]."/Capstone/components/nav.php";
+        include "../components/nav.php";
     ?>
     <div id="page-container">
         <div id="form-container">

@@ -58,7 +58,7 @@ function showResults(results){
                                 <div style='width:"+item["score_rating"]+"%'></div>\
                             </div>\
                         </div>\
-                        <a href='/Capstone/review?reviewID="+item["id"]+"'><button class='viewBtn'>Full Review</button></a>\
+                        <a href='/review?reviewID="+item["id"]+"'><button class='viewBtn'>Full Review</button></a>\
                     </div>\
                 </div>"
             );

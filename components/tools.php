@@ -1,13 +1,21 @@
 <?php
     session_start();
 
-    $root = "/Capstone";
-
     function get_mysql_connection($isTest = false){
-        $host = "localhost";
-        $username = "root";
-        $password = "";
-        $dbname = "database";
+
+        $prod = false;
+
+        if($prod == true){
+            $host = "localhost";
+            $username = "bobgld";
+            $password = "Abernathy4!";
+            $dbname = "database";
+        }else{
+            $host = "localhost";
+            $username = "root";
+            $password = "";
+            $dbname = "database";
+        }
 
         $mysqli = new mysqli($host, $username, $password, $dbname);
 
