@@ -6,10 +6,11 @@
 
     <?php include "../components/header.php"; ?>
 
-    <meta property="og:title" content="Building Better Drug Ads">
+    <meta property="og:title" content="A Basic HTML5 Template">
     <meta property="og:type" content="website">
-    <meta property="og:description" content="Drug ad reviews">
-    <meta property="og:image" content="/assets/images/logo.png">
+    <meta property="og:url" content="https://www.sitepoint.com/a-basic-html5-template/">
+    <meta property="og:description" content="A simple HTML5 Template for new projects.">
+    <meta property="og:image" content="image.png">
 
     <link rel="stylesheet" href="review.css">
     <script src="review.js"></script>
@@ -18,8 +19,8 @@
 
 <body>
   <?php
-    include "../components/tools.php";
-    include "../components/nav.php";
+    include $_SERVER["DOCUMENT_ROOT"]."/Capstone/components/tools.php";
+    include $_SERVER["DOCUMENT_ROOT"]."/Capstone/components/nav.php";
 
     $id;$name;$indication;$efficacy;$place;$dosing;$other_agents;$serious_adrs;
     $common_adrs;$monitoring;$interactions;$cost;$contraindication;
@@ -80,62 +81,50 @@
           <div class="result-cell">
             <p>Indication</p>
             <img src="../assets/icons/<?php echo $indication ?>.png"/>
-            <div class="tooltip">The specific use of a drug in treatment of a specific disease.</div>
           </div>
           <div class="result-cell">
             <p>Efficacy</p>
             <img src="../assets/icons/<?php echo $efficacy ?>.png"/>
-            <div class="tooltip">The ability of a drug to produce the desired beneficial effect</div>
           </div>
           <div class="result-cell">
             <p>Place</p>
             <p><img src="../assets/icons/<?php echo $place ?>.png"/>
-            <div class="tooltip">The specific place in a clinical guideline where a drug falls. Clinical guidelines are established by specific organizations that specialize in specific disease states or drug indications.</div>
           </div>
           <div class="result-cell">
             <p>Dosing</p>
             <img src="../assets/icons/<?php echo $dosing ?>.png"/>
-            <div class="tooltip">The amount of drug (typically in mg) present in one dosage form of medication accompanied with the dosing frequency.</div>
           </div>
           <div class="result-cell">
             <p>Other Agents</p>
             <img src="../assets/icons/<?php echo $other_agents ?>.png"/>
-            <div class="tooltip">Alternative drugs that have the same indication for use. These drugs may or may not be in the same drug class.</div>
           </div>
           <div class="result-cell">
             <p>Serious ADRs</p>
             <img src="../assets/icons/<?php echo $serious_adrs ?>.png"/>
-            <div class="tooltip">Any untoward medical occurrence of a drug that at any dose results in any of the following: death, immediate threat to life, inpatient hospitalization, prolongation of existing hospitalization, or significant disability or incapacity.</div>
           </div>
           <div class="result-cell">
             <p>Common ADRs</p>
             <img src="../assets/icons/<?php echo $common_adrs ?>.png"/>
-            <div class="tooltip">An appreciably harmful or unpleasant reaction resulting from use of a medication.</div>
           </div>
           <div class="result-cell">
             <p>Monitoring</p>
             <img src="../assets/icons/<?php echo $monitoring ?>.png"/>
-            <div class="tooltip">Objective and subjective measures primarily intended to detect changes in clinical status.</div>
           </div>
           <div class="result-cell">
             <p>Interactions</p>
             <img src="../assets/icons/<?php echo $interactions ?>.png"/>
-            <div class="tooltip">A change in the way a drug performs or acts in the body when taken with certain other drugs, herbals, foods, or medical conditions.</div>
           </div>
           <div class="result-cell">
             <p>Cost</p>
             <img src="../assets/icons/<?php echo $cost ?>.png"/>
-            <div class="tooltip">The general price or potential price of a medication or statements relating to patient assistance programs or manufacturer coupons.</div>
           </div>
           <div class="result-cell">
             <p>Contraindication</p>
             <img src="../assets/icons/<?php echo $contraindication ?>.png"/>
-            <div class="tooltip">A specific situation in which a drug should not be in any circumstances combined with another drug or used in a particular disease state.</div>
           </div>
           <div class="result-cell">
             <p>Specific Populations</p>
             <img src="../assets/icons/<?php echo $specific_populations ?>.png"/>
-            <div class="tooltip">The population or specific disease state for which a drug is indicated for.</div>
           </div>
         </div>
         <div id="rating">
@@ -154,7 +143,7 @@
 
         <?php
           if(isset($_SESSION["username"])){
-            echo "<a href='/edit-review?reviewID=".$id."'><button id='edit-btn'>Edit Review</button></a>";
+            echo "<a href='".$root."/edit-review?reviewID=".$id."'><button id='edit-btn'>Edit Review</button></a>";
             echo "<button id='delete-btn'>Delete Review</button>";
           }
         ?>
